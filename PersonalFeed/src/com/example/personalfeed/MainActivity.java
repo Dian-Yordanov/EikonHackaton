@@ -18,6 +18,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.TextView.BufferType;
@@ -49,7 +50,7 @@ public class MainActivity extends Activity {
 	}
 
 	private void setWebView() {
-		Button logginWithTwitter = (Button) findViewById(R.id.logginWithTwitter);
+		ImageButton logginWithTwitter = (ImageButton) findViewById(R.id.logginWithTwitter);
 		 
 		logginWithTwitter.setOnClickListener(new OnClickListener() {
  

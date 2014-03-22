@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/PerFeed"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
         android:layout_gravity="center"
         android:layout_marginLeft="75dp"
         android:layout_marginRight="75dp"
@@ -30,10 +30,10 @@
         android:text="Your personalized news feed"
         android:textColor="#ffffff" />
 
-    <Button
+    <ImageButton
         android:id="@+id/logginWithTwitter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+         android:layout_width="200dp"
+        android:layout_height="40dp"
         android:layout_gravity="center"
         android:layout_marginLeft="75dp"
         android:layout_marginRight="75dp"
@@ -44,8 +44,8 @@
 
     <TextView
         android:id="@+id/orLayble"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+  android:layout_width="200dp"
+        android:layout_height="30dp"
         android:layout_marginLeft="75dp"
         android:layout_marginRight="75dp"
           android:layout_marginBottom="25dp"
