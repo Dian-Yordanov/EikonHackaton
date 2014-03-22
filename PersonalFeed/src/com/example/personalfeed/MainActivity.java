@@ -55,9 +55,23 @@ public class MainActivity extends Activity {
 	}
 
 	private void setWebView() {
-		Button logginWithTwitter = (Button) findViewById(R.id.logginWithTwitter);
-		logginWithTwitter.setBackground(getResources().getDrawable(R.drawable.logintotwitter));
+		Button logginWithoutTwitter = (Button) findViewById(R.id.logginWithoutTwitter);
+		logginWithoutTwitter.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent(MainActivity.this,
+						NewsPage.class);
+				startActivity(intent);
+			}
+
+		});
+
 		
+		Button logginWithTwitter = (Button) findViewById(R.id.logginWithTwitter);
+		logginWithTwitter.setBackground(getResources().getDrawable(
+				R.drawable.logintotwitter));
+
 		logginWithTwitter.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -76,7 +90,8 @@ public class MainActivity extends Activity {
 		TextView perFeed = (TextView) findViewById(R.id.PerFeed);
 		TextView yourPersonalizedNewsFeed = (TextView) findViewById(R.id.yourPersonalizedNewsFeed);
 		TextView orLayble = (TextView) findViewById(R.id.orLayble);
-		
+
 		perFeed.setBackground(getResources().getDrawable(R.drawable.perfeed));
+
 	}
 }

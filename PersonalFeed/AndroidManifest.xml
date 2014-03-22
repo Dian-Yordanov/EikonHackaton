@@ -3,8 +3,8 @@
     package="com.example.personalfeed"
     android:versionCode="1"
     android:versionName="1.0" >
+
     <uses-permission android:name="android.permission.INTERNET" />
-    
 
     <uses-sdk
         android:minSdkVersion="16"
@@ -24,9 +24,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.example.personalfeed.LogginWithTwitter" />
- 
+        <activity android:name="com.example.personalfeed.LogginWithTwitter" />
+        <activity android:name="com.example.personalfeed.NewsPage" />
     </application>
 
 </manifest>

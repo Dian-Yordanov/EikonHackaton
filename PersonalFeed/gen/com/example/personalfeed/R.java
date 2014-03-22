@@ -28,18 +28,24 @@ public final class R {
         public static final int perfeed=0x7f020004;
     }
     public static final class id {
+        public static final int GridLayout1=0x7f080007;
         public static final int LinearLayout1=0x7f080000;
         public static final int PerFeed=0x7f080001;
-        public static final int action_settings=0x7f080007;
-        public static final int button1=0x7f080005;
+        public static final int action_settings=0x7f08000b;
+        public static final int imageView1=0x7f080009;
+        public static final int inflatedNewsLayout=0x7f080008;
         public static final int logginWithTwitter=0x7f080003;
+        public static final int logginWithoutTwitter=0x7f080005;
         public static final int orLayble=0x7f080004;
+        public static final int textView1=0x7f08000a;
         public static final int twitterWebView=0x7f080006;
         public static final int yourPersonalizedNewsFeed=0x7f080002;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int loggin_with_twitter=0x7f030001;
+        public static final int news_page=0x7f030002;
+        public static final int view_for_inflating_news=0x7f030003;
     }
     public static final class menu {
         public static final int main=0x7f070000;
