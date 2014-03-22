@@ -29,8 +29,8 @@ public class MainActivity extends Activity {
 	public static ListView personalityListView;
 
 	String[] values = new String[] { "Student", "Trader" };
-	int width;
-	int height;
+	public static int width;
+	public static int height;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

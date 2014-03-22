@@ -31,13 +31,12 @@ public final class R {
         public static final int GridLayout1=0x7f080007;
         public static final int LinearLayout1=0x7f080000;
         public static final int PerFeed=0x7f080001;
-        public static final int action_settings=0x7f08000b;
-        public static final int imageView1=0x7f080009;
-        public static final int inflatedNewsLayout=0x7f080008;
+        public static final int action_settings=0x7f08000a;
         public static final int logginWithTwitter=0x7f080003;
         public static final int logginWithoutTwitter=0x7f080005;
+        public static final int newsImageView=0x7f080008;
+        public static final int newsTextView=0x7f080009;
         public static final int orLayble=0x7f080004;
-        public static final int textView1=0x7f08000a;
         public static final int twitterWebView=0x7f080006;
         public static final int yourPersonalizedNewsFeed=0x7f080002;
     }
