@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -29,6 +30,7 @@ public class InflatedViewForNewsPage extends LinearLayout {
 		inflatedViewNews = newsView.inflate(
 				R.layout.view_for_inflating_news, mainLayout, false);
 		setPicture();
+		inflatedViewNews.setBackgroundColor(Color.rgb(62,62, 62));
 		
 		
 		return inflatedViewNews;
@@ -38,7 +40,7 @@ public class InflatedViewForNewsPage extends LinearLayout {
 	private void setPicture(){
 		newsPicture = (ImageView) inflatedViewNews.findViewById(R.id.newsImageView);			
 		resizedBitmapFlag = Bitmap.createScaledBitmap(ImageDownloader.loadBitmap("http://i.telegraph.co.uk/multimedia/archive/01711/Google_1711397c.jpg")
-				, MainActivity.width/2, 300, true);
+				, MainActivity.width * 38/100, 300, true);
 		newsPicture.setImageBitmap(resizedBitmapFlag);
 	}
 }

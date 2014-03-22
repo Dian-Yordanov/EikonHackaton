@@ -11,9 +11,6 @@ import android.widget.LinearLayout;
 
 public class NewsPage extends Activity {
 	private GridLayout gridLayout;
-	private static LinearLayout mainLayout1;
-	private static LinearLayout mainLayout2;
-	private static LinearLayout mainLayout3;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -28,13 +25,19 @@ public class NewsPage extends Activity {
 		Bitmap resizedBitmapFlag = Bitmap.createScaledBitmap(header,
 				MainActivity.width * 49 / 100, 80, true);
 		pfheader.setImageBitmap(resizedBitmapFlag);
+		
+		
+		
 
 		InflatedViewForNewsPage inflatedNewsView = new InflatedViewForNewsPage(
 				getApplicationContext());
 
 		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext()));
+		gridLayout.setPadding(0, 5, 5, 5);
 		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext()));
+		gridLayout.setPadding(0, 5, 5, 5);
 		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext()));
+		gridLayout.setPadding(0, 5, 5, 5);
 		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext()));
 
 	}
