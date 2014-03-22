@@ -1,8 +1,44 @@
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/GridLayout1"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:columnCount="2"
-    android:background="@drawable/background" >
+    android:layout_height="fill_parent" >
 
-</GridLayout>
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <GridLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/pf"
+              android:layout_width="100dp"
+            android:layout_height="20dp"
+                android:layout_gravity="left"
+                android:src="@drawable/perfeed" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_gravity="right"
+                      android:layout_width="match_parent"
+            android:layout_height="match_parent"
+                android:text=" Always updating."
+                android:textColor="#ffffff" />
+        </GridLayout>
+
+        <GridLayout
+            android:id="@+id/GridLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/background"
+            android:columnCount="2" >
+        </GridLayout>
+    </LinearLayout>
+
+</ScrollView>
