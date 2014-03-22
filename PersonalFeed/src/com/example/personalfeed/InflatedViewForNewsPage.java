@@ -18,29 +18,42 @@ public class InflatedViewForNewsPage extends LinearLayout {
 	public static LinearLayout mainLayout;
 	ImageView newsPicture;
 	Bitmap resizedBitmapFlag;
-	
-	
+
 	public InflatedViewForNewsPage(Context context) {
 		super(context);
 	}
 
 	public View inflator(Context context) {
 
-		newsView = LayoutInflater.from(getContext());		
-		inflatedViewNews = newsView.inflate(
-				R.layout.view_for_inflating_news, mainLayout, false);
+		newsView = LayoutInflater.from(getContext());
+		inflatedViewNews = newsView.inflate(R.layout.view_for_inflating_news,
+				mainLayout, false);
 		setPicture();
-		inflatedViewNews.setBackgroundColor(Color.rgb(62,62, 62));
 		
+		TextView textView1 = (TextView) inflatedViewNews
+				.findViewById(R.id.newsTextView);
+		textView1.setBackgroundColor(Color.rgb(62, 62, 62));
+
+		LayoutParams paramsExample = new LayoutParams(
+				MainActivity.width * 42 / 100, 80, 1.0f);
+		 paramsExample.setMargins(10,0,0,0);
+		    
+		textView1.setLayoutParams(paramsExample);
+		textView1.setTextColor(Color.rgb(255, 168, 0));
 		
+	   
 		return inflatedViewNews;
 
-		
 	}
-	private void setPicture(){
-		newsPicture = (ImageView) inflatedViewNews.findViewById(R.id.newsImageView);			
-		resizedBitmapFlag = Bitmap.createScaledBitmap(ImageDownloader.loadBitmap("http://i.telegraph.co.uk/multimedia/archive/01711/Google_1711397c.jpg")
-				, MainActivity.width * 38/100, 300, true);
+
+	private void setPicture() {
+		newsPicture = (ImageView) inflatedViewNews
+				.findViewById(R.id.newsImageView);
+		resizedBitmapFlag = Bitmap
+				.createScaledBitmap(
+						ImageDownloader
+								.loadBitmap("http://i.telegraph.co.uk/multimedia/archive/01711/Google_1711397c.jpg"),
+						MainActivity.width * 42 / 100, 250, true);
 		newsPicture.setImageBitmap(resizedBitmapFlag);
 	}
 }

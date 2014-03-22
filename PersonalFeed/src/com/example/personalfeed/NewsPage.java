@@ -23,23 +23,26 @@ public class NewsPage extends Activity {
 		Bitmap header = BitmapFactory.decodeResource(getBaseContext()
 				.getResources(), R.drawable.pfheader);
 		Bitmap resizedBitmapFlag = Bitmap.createScaledBitmap(header,
-				MainActivity.width * 49 / 100, 80, true);
+				MainActivity.width * 42 / 100, 60, true);
 		pfheader.setImageBitmap(resizedBitmapFlag);
 		
 		
 		
-
 		InflatedViewForNewsPage inflatedNewsView = new InflatedViewForNewsPage(
 				getApplicationContext());
 
 		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext()));
-		gridLayout.setPadding(0, 5, 5, 5);
 		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext()));
-		gridLayout.setPadding(0, 5, 5, 5);
 		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext()));
-		gridLayout.setPadding(0, 5, 5, 5);
 		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext()));
-
+		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext()));
+		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext()));
+		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext()));
+		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext()));
+		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext()));
+		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext()));
+		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext()));
+		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext()));
 	}
 
 }
