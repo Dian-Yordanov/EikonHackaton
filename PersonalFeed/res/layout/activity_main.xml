@@ -3,18 +3,66 @@
     android:id="@+id/LinearLayout1"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical">
-    
-   <TextView
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <TextView
         android:id="@+id/PerFeed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/perfeed" 
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:id="@+id/yourPersonalizedNewsFeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+         android:layout_marginBottom="75dp"
+        android:text="Your personalized news feed"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/logginWithTwitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+          android:layout_marginBottom="25dp"
+        android:background="@drawable/logintotwitter" 
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:id="@+id/orLayble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+          android:layout_marginBottom="25dp"
+        android:background="@drawable/or"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
-   <Button
-       android:id="@+id/logginWithTwitterButton"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Button" />
- 
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="Continue without Twitter"
+        android:textColor="#ffffff" 
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"/>
+
 </LinearLayout>

@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
@@ -32,7 +33,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 
 		setDesign();
-		setButton();
+		setWebView();
 
 	}
 
@@ -44,32 +45,21 @@ public class MainActivity extends Activity {
 
 	private void setDesign() {
 		TextView PerFeed = (TextView) findViewById(R.id.PerFeed);
-		PerFeed.setText("PerFeed", BufferType.SPANNABLE);
-
-		Spannable s = (Spannable) PerFeed.getText();
-		ForegroundColorSpan fcs1 = new ForegroundColorSpan(Color.BLUE);
-
-		ForegroundColorSpan fcs2 = new ForegroundColorSpan(Color.RED);
-		
-		s.setSpan(fcs1, 0, "PerFeed".length() - 4,
-				Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-		s.setSpan(fcs2, 3, "PerFeed".length(),
-				Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
 
 	}
 
-	private void setButton() {
-		Button logginWithTwitterButton = (Button) findViewById(R.id.logginWithTwitterButton);
+	private void setWebView() {
+		Button logginWithTwitter = (Button) findViewById(R.id.logginWithTwitter);
+		 
+		logginWithTwitter.setOnClickListener(new OnClickListener() {
+ 
+		  @Override
+		  public void onClick(View arg0) {
+		    Intent intent = new Intent(MainActivity.this, LogginWithTwitter.class);
+		    startActivity(intent);
+		  }
+ 
+		});
 		
-		logginWithTwitterButton.setOnClickListener(new OnClickListener() {
-			 
-			  @Override
-			  public void onClick(View arg0) {
-			    Intent intent = new Intent(getBaseContext(), TwitterLoggin.class);
-			    startActivity(intent);
-			  }
-	 
-			});
 	}
-
 }
