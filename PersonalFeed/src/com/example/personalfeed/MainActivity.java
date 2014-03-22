@@ -8,9 +8,11 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.Color;
+import android.graphics.Point;
 import android.graphics.Typeface;
 import android.text.Spannable;
 import android.text.style.ForegroundColorSpan;
+import android.view.Display;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -27,14 +29,22 @@ public class MainActivity extends Activity {
 	public static ListView personalityListView;
 
 	String[] values = new String[] { "Student", "Trader" };
+	int width;
+	int height;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		setDesign();
+		Display display = getWindowManager().getDefaultDisplay();
+		Point size = new Point();
+		display.getSize(size);
+		width = size.x;
+		height = size.y;
+
 		setWebView();
+		setDesignOfThePictures();
 
 	}
 
@@ -44,23 +54,29 @@ public class MainActivity extends Activity {
 		return true;
 	}
 
-	private void setDesign() {
-		TextView PerFeed = (TextView) findViewById(R.id.PerFeed);
+	private void setWebView() {
+		Button logginWithTwitter = (Button) findViewById(R.id.logginWithTwitter);
+		logginWithTwitter.setBackground(getResources().getDrawable(R.drawable.logintotwitter));
+		
+		logginWithTwitter.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent(MainActivity.this,
+						LogginWithTwitter.class);
+				startActivity(intent);
+			}
+
+		});
 
 	}
 
-	private void setWebView() {
-		ImageButton logginWithTwitter = (ImageButton) findViewById(R.id.logginWithTwitter);
-		 
-		logginWithTwitter.setOnClickListener(new OnClickListener() {
- 
-		  @Override
-		  public void onClick(View arg0) {
-		    Intent intent = new Intent(MainActivity.this, LogginWithTwitter.class);
-		    startActivity(intent);
-		  }
- 
-		});
+	private void setDesignOfThePictures() {
+
+		TextView perFeed = (TextView) findViewById(R.id.PerFeed);
+		TextView yourPersonalizedNewsFeed = (TextView) findViewById(R.id.yourPersonalizedNewsFeed);
+		TextView orLayble = (TextView) findViewById(R.id.orLayble);
 		
+		perFeed.setBackground(getResources().getDrawable(R.drawable.perfeed));
 	}
 }
