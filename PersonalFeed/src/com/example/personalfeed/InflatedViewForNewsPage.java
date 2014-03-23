@@ -23,12 +23,12 @@ public class InflatedViewForNewsPage extends LinearLayout {
 		super(context);
 	}
 
-	public View inflator(Context context) {
+	public View inflator(Context context, String urlForPicture, String title) {
 
 		newsView = LayoutInflater.from(getContext());
 		inflatedViewNews = newsView.inflate(R.layout.view_for_inflating_news,
 				mainLayout, false);
-		setPicture();
+		setPicture(urlForPicture);
 		
 		TextView textView1 = (TextView) inflatedViewNews
 				.findViewById(R.id.newsTextView);
@@ -40,19 +40,20 @@ public class InflatedViewForNewsPage extends LinearLayout {
 		    
 		textView1.setLayoutParams(paramsExample);
 		textView1.setTextColor(Color.rgb(255, 168, 0));
+		textView1.setText(title);
 		
 	   
 		return inflatedViewNews;
 
 	}
 
-	private void setPicture() {
+	private void setPicture(String urlForPicture) {
 		newsPicture = (ImageView) inflatedViewNews
 				.findViewById(R.id.newsImageView);
 		resizedBitmapFlag = Bitmap
 				.createScaledBitmap(
 						ImageDownloader
-								.loadBitmap("http://i.telegraph.co.uk/multimedia/archive/01711/Google_1711397c.jpg"),
+								.loadBitmap(urlForPicture),
 						MainActivity.width * 42 / 100, 250, true);
 		newsPicture.setImageBitmap(resizedBitmapFlag);
 	}

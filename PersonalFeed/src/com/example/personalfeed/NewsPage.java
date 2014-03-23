@@ -31,18 +31,16 @@ public class NewsPage extends Activity {
 		InflatedViewForNewsPage inflatedNewsView = new InflatedViewForNewsPage(
 				getApplicationContext());
 
-		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext()));
-		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext()));
-		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext()));
-		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext()));
-		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext()));
-		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext()));
-		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext()));
-		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext()));
-		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext()));
-		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext()));
-		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext()));
-		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext()));
+		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext(),"http://i.imgur.com/Ab4AUEX.jpg","My friends cat had kittens. This little guy is too cute."));
+		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext(),"http://i.imgur.com/ykCOKy7.png", "An adorable skulk of foxes."));
+		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext(),"http://i.imgur.com/yBwDaKV.jpg?1","Such Fashions. Very Stylish. Wow."));
+		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext(),"http://thomsonreuters.com/images/300x225/RTR2HYXY-SIU.jpg","Technology and regulatory strain: Where's your breaking point?"));
+		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext(),"http://thomsonreuters.com/images/300x225/RTR2JBUQ.jpg","Igniting worldwide policy debate of the digital economy"));
+		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext(),"http://thomsonreuters.com/images/300x225/RTR3A44H.jpg","Latest Ones to Watch report provides a sneak peek into the pharmaceutical drug pipeline"));
+		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext(),"http://thomsonreuters.com/images/300x225/RTR2M3AI.jpg","Helping our customers adapt to a changing market"));
+		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext(),"http://thomsonreuters.com/images/300x225/beatles.jpg","Celebrating 50 years of Beatlemania with \"Fab Four\"-related scholarly works"));
+		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext(),"http://thomsonreuters.com/images/misc-img/copd-infographic.jpg","Research shows greater focus on preventative therapies for COPD treatment"));
+		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext(),"http://thomsonreuters.com/images/300x225/RTX155U51.jpg","Disruptive forces ahead for law firm market"));
 	}
 
 }
