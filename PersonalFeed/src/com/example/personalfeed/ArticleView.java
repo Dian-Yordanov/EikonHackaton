@@ -27,6 +27,12 @@ public class ArticleView  extends Activity {
 
 		articleText.setText(getString(R.string.articleText));
 		
+		ImageView headerPicture = (ImageView) findViewById(R.id.headerPicture);
+		Bitmap downloadedBitmap = ImageDownloader.loadBitmap("http://s1.reutersmedia.net/resources/r/?m=02&d=20140322&t=2&i=868234325&w=&fh=&fw=&ll=580&pl=378&r=CBREA2L0XVV00");
+		downloadedBitmap = Bitmap.createScaledBitmap(downloadedBitmap,
+				MainActivity.width * 42 / 100, 250, true);
+		headerPicture.setImageBitmap(downloadedBitmap);
+		
 	}
 
 }
