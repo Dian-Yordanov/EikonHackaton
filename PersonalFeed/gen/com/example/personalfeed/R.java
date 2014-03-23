@@ -27,6 +27,7 @@ public final class R {
         public static final int or=0x7f020003;
         public static final int perfeed=0x7f020004;
         public static final int pfheader=0x7f020005;
+        public static final int twitter_icon=0x7f020006;
     }
     public static final class id {
         public static final int GridLayout1=0x7f08000a;
