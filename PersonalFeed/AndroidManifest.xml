@@ -6,6 +6,10 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    
     <uses-sdk
         android:minSdkVersion="16"
         android:targetSdkVersion="19" />
@@ -27,6 +31,7 @@
         <activity android:name="com.example.personalfeed.LogginWithTwitter" />
         <activity android:name="com.example.personalfeed.NewsPage" />
         <activity android:name="com.example.personalfeed.ArticleView" />
+         <activity android:name="com.example.personalfeed.TwitterActivity" />
     </application>
 
 </manifest>

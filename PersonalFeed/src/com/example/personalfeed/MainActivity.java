@@ -1,9 +1,20 @@
 package com.example.personalfeed;
 
+import get_news.MainClass;
+import get_news.NewsArticle;
+import get_news.NewsArticleDetails;
+
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+import model.GoodNews;
+import model.Personalize;
+import model.TwitterModel;
 
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.AssetManager;
@@ -12,6 +23,7 @@ import android.graphics.Point;
 import android.graphics.Typeface;
 import android.text.Spannable;
 import android.text.style.ForegroundColorSpan;
+import android.util.Log;
 import android.view.Display;
 import android.view.Menu;
 import android.view.View;
@@ -20,6 +32,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -42,7 +55,12 @@ public class MainActivity extends Activity {
 		display.getSize(size);
 		width = size.x;
 		height = size.y;
+		
+		
+		
+		
 
+		
 		setWebView();
 		setDesignOfThePictures();
 
@@ -77,7 +95,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				Intent intent = new Intent(MainActivity.this,
-						LogginWithTwitter.class);
+						TwitterActivity.class);
 				startActivity(intent);
 			}
 
@@ -94,4 +112,5 @@ public class MainActivity extends Activity {
 		perFeed.setBackground(getResources().getDrawable(R.drawable.perfeed));
 
 	}
+	
 }
