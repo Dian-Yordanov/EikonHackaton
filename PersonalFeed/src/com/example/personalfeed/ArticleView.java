@@ -26,8 +26,14 @@ public class ArticleView extends Activity {
 		setContentView(R.layout.article_view);
 
 		title = (TextView) findViewById(R.id.title);
+title.setText(getBaseContext().getResources().getString(R.string.title));
+
+
 
 		body = (TextView) findViewById(R.id.body);
+
+body.setText(getBaseContext().getResources().getString(R.string.articleText));
+
 
 	}
 

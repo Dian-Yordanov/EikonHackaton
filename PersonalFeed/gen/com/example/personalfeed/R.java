@@ -42,12 +42,12 @@ public final class R {
         public static final int newsTextView=0x7f080011;
         public static final int orLayble=0x7f080004;
         public static final int pfheader=0x7f080006;
-        public static final int settupId=0x7f08000f;
+        public static final int settupId=0x7f08000e;
         public static final int shareOnTwitter=0x7f080007;
         public static final int title=0x7f080008;
-        public static final int twitterLogginView=0x7f08000d;
+        public static final int twitterLogginView=0x7f08000f;
         public static final int twitterWebView=0x7f08000a;
-        public static final int writeID=0x7f08000e;
+        public static final int writeID=0x7f08000d;
         public static final int yourPersonalizedNewsFeed=0x7f080002;
     }
     public static final class layout {
@@ -66,6 +66,7 @@ public final class R {
         public static final int app_name=0x7f050000;
         public static final int articleText=0x7f050003;
         public static final int hello_world=0x7f050002;
+        public static final int title=0x7f050004;
     }
     public static final class style {
         /** 

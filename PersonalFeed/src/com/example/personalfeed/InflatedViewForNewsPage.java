@@ -95,16 +95,6 @@ public class InflatedViewForNewsPage extends LinearLayout {
 		newsPicture = (ImageView) inflatedViewNews
 				.findViewById(R.id.newsImageView);
 
-		newView.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View arg0) {
-				// ArticleView.webAddress = webViewaddress;
-				Log.v("gggggsddffga", key + "ffedfgvvfdss");
-
-			}
-
-		});
 		newsPicture.setOnClickListener(new OnClickListener() {
 
 			@Override

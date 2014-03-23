@@ -119,4 +119,6 @@ public class TwitterActivity extends Activity {
 			ex.printStackTrace();
 		}
 	}
+	
+	
 }
