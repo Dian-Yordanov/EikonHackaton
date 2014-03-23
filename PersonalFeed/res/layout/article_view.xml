@@ -21,6 +21,49 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@android:color/white" />
-    </LinearLayout>
+        
+         <TextView
+            android:id="@+id/pfheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" 
+            android:text="(Reuters) - Ace pitcher Clayton Kershaw started the payback on his $200 million contract when he helped the Los Angeles Dodgers to a 3-1 victory over the Arizona Diamondbacks in the opening game of the 2014 major league season in Australia on Saturday.
 
+The Dodgers have invested heavily in a big-budget roster in an attempt to end 26 years without a trip to the World Series and got off to a great start under the lights at the Sydney Cricket Ground (SCG).
+
+After taking the lead in the second innings on an Andre Ethier RBI, the Dodgers moved ahead 3-0 in the fourth when outfielder Scott Van Slyke delighted the 38,266 crowd with a two-run homer.
+
+\"We've come a long way to get (a win)," Dodgers manager Don Mattingly told reporters.
+
+\"I don't know if there's a whole lot of meaning in it ... but we can't win them all if we don't win the first one."
+
+Double Cy Young winner Kershaw, who signed the richest contract ever for a pitcher in January worth $30 million a season, allowed five hits and struck out seven batters in 6 2/3rd innings for the win.
+
+"It's always good to get a result," said the 26-year-old, who had failed to get a win in spring training.
+
+"Sometimes you need the adrenaline of a regular season game and I'm kind of relieved to get this one under my belt."
+
+The start of the first major league game in Australia for a century was delayed by rain and the new season got underway 14 minutes behind schedule when Wade Miley threw a strike to Dodgers rightfielder Yasiel Puig.
+
+It was not a great evening for either player, left-hander Miley taking the loss after giving up three runs in five innings and Cuban Puig going 0 for 5.
+
+Van Slyke fell just short of the first home run of the year at the top of the second when his flyball was held up by the wind and hit the wall with D-backs leftfielder Mark Trumbo having completely misjudged its flight.
+
+It did not take too long for the Dodgers to notch up the first run of the new season, though, and Ethier's groundout RBI sent Adrian Gonzalez home to score in the same inning.
+
+Van Slyke made no mistake in the fourth to triple the lead with his homer to rightfield, sending the ball over the fence just inside the rightfield foul-line.
+
+Arizona finally got on the scoreboard in the sixth inning when a Trumbo RBI allowed first baseman Paul Goldschmidt to cross home plate and reduce the lead to 3-1.
+
+Miley was a late replacement for D-Backs ace Patrick Corbin, who suffered a serious elbow injury last weekend which looks like ruling him out for the season.
+
+South Korean pitcher Ryu Hyun-jin goes up against Arizona's Trevor Cahill in the second and final match of the series on Sunday.
+
+"They had a little more pop and they scored three runs on us," said Diamondbacks manager Kirk Gibson.
+
+"We have 161 games left so you try and learn some things and hopefully we'll show better tomorrow."/>
+       
+    </LinearLayout>
 </ScrollView>
