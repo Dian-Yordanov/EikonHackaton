@@ -11,6 +11,7 @@ import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.AsyncTask;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -58,6 +59,21 @@ public class InflatedViewForNewsPage extends LinearLayout {
 		textView1.setTextColor(Color.rgb(255, 168, 0));
 		textView1.setTextSize(11);
 
+		newsPicture.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				//ArticleView.webAddress = webViewaddress;
+				
+			
+				
+				Intent intent = new Intent(getContext(), ArticleView.class);
+				intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+				getContext().startActivity(intent); 
+			}
+
+		});
+		
 		if (title.length() > 50) {
 			title = title.substring(0, 50) + "...";
 		}
@@ -78,12 +94,22 @@ public class InflatedViewForNewsPage extends LinearLayout {
 				mainLayout, false);
 		newsPicture = (ImageView) inflatedViewNews
 				.findViewById(R.id.newsImageView);
-		
+
+		newView.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				// ArticleView.webAddress = webViewaddress;
+				Log.v("gggggsddffga", key + "ffedfgvvfdss");
+
+			}
+
+		});
 		newsPicture.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View arg0) {
-				ArticleView.webAddress = webViewaddress;
+				//ArticleView.webAddress = webViewaddress;
 				
 				Intent intent = new Intent(getContext(), ArticleView.class);
 				intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
