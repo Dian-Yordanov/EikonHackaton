@@ -26,6 +26,7 @@
         </activity>
         <activity android:name="com.example.personalfeed.LogginWithTwitter" />
         <activity android:name="com.example.personalfeed.NewsPage" />
+        <activity android:name="com.example.personalfeed.ArticleView" />
     </application>
 
 </manifest>
