@@ -24,8 +24,7 @@ public class InflatedViewForNewsPage extends LinearLayout {
 	public static LayoutInflater newsView;
 	public static LinearLayout mainLayout;
 	static ImageView newsPicture;
-	public static Bitmap resizedBitmapFlag;
-	public static Bitmap publicBitmap;
+	
 	
 	public static String urlForPictureForThread;
 
@@ -102,8 +101,7 @@ public class InflatedViewForNewsPage extends LinearLayout {
 					e.printStackTrace();
 				}
                 
-				publicBitmap =  resizedBitmapFlag;
-				
+				//resizedBitmapFlag 
 				Intent intent = new Intent(getContext(), cls);
 				intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 				getContext().startActivity(intent); 
@@ -143,7 +141,7 @@ public class InflatedViewForNewsPage extends LinearLayout {
 	protected class ImageLoaderTask extends AsyncTask<Object, Void, Bitmap> {
 		String urlEndAwayString;
 		ImageView hostTeam;
-		
+		Bitmap resizedBitmapFlag;
 
 		@Override
 		protected Bitmap doInBackground(Object... params) {
@@ -152,8 +150,7 @@ public class InflatedViewForNewsPage extends LinearLayout {
 
 			Bitmap b = new DirectLoader().download(urlEndAwayString);
 
-			resizedBitmapFlag = Bitmap.createScaledBitmap(b,
-					MainActivity.width * 42 / 100, 250, true);
+			resizedBitmapFlag = Bitmap.createScaledBitmap(b,MainActivity.width * 42 / 100, 250, true);
 			return resizedBitmapFlag;
 		}
 
