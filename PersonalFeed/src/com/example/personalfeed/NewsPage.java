@@ -30,7 +30,7 @@ public class NewsPage extends Activity {
 		InflatedViewForNewsPage inflatedNewsView = new InflatedViewForNewsPage(
 				getApplicationContext());
 		
-		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext(),"http://s1.reutersmedia.net/resources/r/?m=02&d=20140322&t=2&i=868234325&w=&fh=&fw=&ll=700&pl=378&r=CBREA2L0XVV00","Dodgers down D-Backs in Sydney season-opener", "com.example.personalfeed.ArticleView"));
+		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext(),"http://s1.reutersmedia.net/resources/r/?m=02&d=20140322&t=2&i=868234325&w=&fh=&fw=&ll=700&pl=378&r=CBREA2L0XVV00","Dodgers down D-Backs in Sydney season-opener", "http://www.reuters.com/article/2014/03/22/us-baseball-openers-idUSBREA2K0SJ20140322"));
 		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext(),"http://i.imgur.com/bBdc2yX.jpg?1","One of the coolest looking dogs I've ever seen."));
 		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext(),"http://i.imgur.com/ykCOKy7.png", "An adorable skulk of foxes."));
 		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext(),"http://i.imgur.com/yBwDaKV.jpg?1","Such Fashions. Very Stylish. Wow."));

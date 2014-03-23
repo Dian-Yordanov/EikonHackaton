@@ -84,25 +84,8 @@ public class InflatedViewForNewsPage extends LinearLayout {
 
 			@Override
 			public void onClick(View arg0) {
-				Class cls = null;
-				try {
-					cls = Class.forName(className1);
-					try {
-						Object obj = cls.newInstance();
-					} catch (InstantiationException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					} catch (IllegalAccessException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
-				} catch (ClassNotFoundException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-                
-				//resizedBitmapFlag 
-				Intent intent = new Intent(getContext(), cls);
+		
+				Intent intent = new Intent(getContext(), ArticleView.class);
 				intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 				getContext().startActivity(intent); 
 			}
