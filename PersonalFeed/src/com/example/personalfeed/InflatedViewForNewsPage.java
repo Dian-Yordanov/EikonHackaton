@@ -70,9 +70,8 @@ public class InflatedViewForNewsPage extends LinearLayout {
 
 	}
 
-	public View inflator(Context context, String urlForPicture, String title, String className){
+	public View inflator(Context context, String urlForPicture, String title, final String webViewaddress){
 		urlForPictureForThread = urlForPicture;
-		final String className1 = className;
 		
 		newsView = LayoutInflater.from(getContext());
 		inflatedViewNews = newsView.inflate(R.layout.view_for_inflating_news,
@@ -84,7 +83,8 @@ public class InflatedViewForNewsPage extends LinearLayout {
 
 			@Override
 			public void onClick(View arg0) {
-		
+				ArticleView.webAddress = webViewaddress;
+				
 				Intent intent = new Intent(getContext(), ArticleView.class);
 				intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 				getContext().startActivity(intent); 

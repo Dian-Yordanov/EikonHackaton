@@ -17,6 +17,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class ArticleView  extends Activity {
+	public static String webAddress = "http://www.reuters.com/article/2014/03/22/us-baseball-openers-idUSBREA2K0SJ20140322";
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -35,7 +37,7 @@ public class ArticleView  extends Activity {
 		  
 		  
 		   thomsonReuters.setWebViewClient(new WebViewClient());
-		   thomsonReuters.loadUrl("http://www.reuters.com/article/2014/03/22/us-baseball-openers-idUSBREA2K0SJ20140322");
+		   thomsonReuters.loadUrl(webAddress);
 
 
 		Button shareOnTwitter = (Button) findViewById(R.id.shareOnTwitter);		
