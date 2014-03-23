@@ -56,7 +56,12 @@ public class InflatedViewForNewsPage extends LinearLayout {
           
 		textView1.setLayoutParams(paramsExample);
 		textView1.setTextColor(Color.rgb(255, 168, 0));
+		textView1.setTextSize(11);
+		
+		resizeText(title);
 		textView1.setText(title);
+		
+		
 		new ImageLoaderTask().execute(urlForPictureForThread, newsPicture);
 		return inflatedViewNews;
 
@@ -83,6 +88,10 @@ public class InflatedViewForNewsPage extends LinearLayout {
 			hostTeam.setImageBitmap(resizedBitmapFlag);
 		}
 
+	}
+	
+	private static void resizeText(String title){
+		
 	}
 
 }
