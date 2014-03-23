@@ -7,6 +7,7 @@ import android.graphics.Point;
 import android.os.Bundle;
 import android.view.Display;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class ArticleView  extends Activity {
 	@Override
@@ -22,6 +23,9 @@ public class ArticleView  extends Activity {
 				MainActivity.width * 42 / 100, 60, true);
 		pfheader.setImageBitmap(resizedBitmapFlag);
 		
+		TextView articleText = (TextView) findViewById(R.id.articleText);
+
+		articleText.setText(getString(R.string.articleText));
 		
 	}
 
