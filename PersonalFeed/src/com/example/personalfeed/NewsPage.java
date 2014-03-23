@@ -45,18 +45,19 @@ public class NewsPage extends Activity {
 								"http://thomsonreuters.com/images/300x225/RTR2HYXY-SIU.jpg",
 								"Technology and regulatory strain: Where's your breaking point?",
 								"http://thomsonreuters.com/articles/2014/technology-and-regulatory-strain-wheres-your-breaking-point"));
-		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext(),
-				"http://thomsonreuters.com/images/300x225/RTR2JBUQ.jpg",
-				"Igniting worldwide policy debate of the digital economy"
-				,
-				"http://thomsonreuters.com/articles/2014/digital-economy-report-march-2014"));
+		gridLayout
+				.addView(inflatedNewsView
+						.inflator(
+								getApplicationContext(),
+								"http://thomsonreuters.com/images/300x225/RTR2JBUQ.jpg",
+								"Igniting worldwide policy debate of the digital economy",
+								"http://thomsonreuters.com/articles/2014/digital-economy-report-march-2014"));
 		gridLayout
 				.addView(inflatedNewsView
 						.inflator(
 								getApplicationContext(),
 								"http://thomsonreuters.com/images/300x225/RTR3A44H.jpg",
-								"Latest Ones to Watch report provides a sneak peek into the pharmaceutical drug pipeline"
-								,
+								"Latest Ones to Watch report provides a sneak peek into the pharmaceutical drug pipeline",
 								"http://thomsonreuters.com/articles/2014/ones-to-watch-q3-2013"));
 		gridLayout.addView(inflatedNewsView.inflator(getApplicationContext(),
 				"http://thomsonreuters.com/images/300x225/RTR2M3AI.jpg",
