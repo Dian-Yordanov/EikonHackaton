@@ -58,10 +58,11 @@ public class InflatedViewForNewsPage extends LinearLayout {
 		textView1.setTextColor(Color.rgb(255, 168, 0));
 		textView1.setTextSize(11);
 		
-		checkTextLenght(title);
+		if(title.length()>50){title = title.substring(0,50)+"...";
+		}
 		textView1.setText(title);
 		
-		textView1.setPadding(5, 5, 5, 0);
+		textView1.setPadding(8, 13, 5, 0);
 		new ImageLoaderTask().execute(urlForPictureForThread, newsPicture);
 		return inflatedViewNews;
 
@@ -90,8 +91,6 @@ public class InflatedViewForNewsPage extends LinearLayout {
 
 	}
 	
-	private static void checkTextLenght(String title){
-		
-	}
+
 
 }
